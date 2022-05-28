@@ -32,9 +32,9 @@ You will need a cronjob to execute it periodicaly. It must be the crontab of the
 
 $ crontab -e
 
-And add a line similar to this one, that will execute the script every 2 minutes.
+And add a line similar to this one, that will execute the script every hour.
 
-*/2 * * * * systemd-cat -t "checkprice-cron" /home/daniel/scprime_price_check/.venv/bin/python /home/daniel/scprime_price_check/scprime_price_check.py
+* 1 * * * systemd-cat -t "checkprice-cron" /home/daniel/scprime_price_check/.venv/bin/python /home/daniel/scprime_price_check/scprime_price_check.py
 
 You will be able to check the journal to see it working like this
 
