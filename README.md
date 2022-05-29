@@ -69,7 +69,7 @@ $ sudo journalctl -n100|grep checkprice-cron
     - Edit it with notepad
     - The file should contain one line. You have to adapt the path to yours
         - c:\scprime\scprime_price_check\venv\Scripts\python.exe c:\scprime\scprime_price_check\scprime_price_check.py
-    - And program it to launch periodically. I do it every 2 minutes.
+    - And program it to launch periodically. I do it every hour.
 
 Video in spanish explaning the procedure https://www.youtube.com/watch?v=qzkOpk045vk
 
