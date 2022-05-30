@@ -26,7 +26,7 @@ $ pip install -r requirements.txt
 
 Edit the config.py and change base_cmd to your needs. You need to edit it to match what you would be using to launch spc outside its directory. So something like '/var/lib/spc'. Test the script.
 
-$ python scprime_price_check.py
+$ python3 scprime_price_check.py
 
 You will need a cronjob to execute it periodicaly. It must be the crontab of the user who launchs spd.
 
@@ -34,7 +34,7 @@ $ crontab -e
 
 And add a line similar to this one, that will execute the script every hour.
 
-0 * * * * systemd-cat -t "checkprice-cron" /home/daniel/scprime_price_check/.venv/bin/python /home/daniel/scprime_price_check/scprime_price_check.py
+0 * * * * systemd-cat -t "checkprice-cron" /home/daniel/scprime_price_check/.venv/bin/python3 /home/daniel/scprime_price_check/scprime_price_check.py
 
 You will be able to check the journal to see it working like this
 
